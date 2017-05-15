@@ -1,3 +1,15 @@
 header h2, h3{
 	color: green;
 }
+
+p#azul{
+	color: blue;
+}
+
+.prueba{
+	color: red;
+}
+
+.grande{
+	font-size: 20px;
+}
