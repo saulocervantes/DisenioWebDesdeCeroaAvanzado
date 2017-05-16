@@ -6,14 +6,18 @@ p#azul{
 	color: blue;
 }
 
-.prueba{
+/*.prueba{
 	color: green;
-}
+}*/
 
-.grande{
+/*.grande{
 	font-size: 20px;
-}
+}*/
 
-p+p{
+/*p+p{
 	font-weight: bolder;
+}*/
+
+div > p{
+	color: red;
 }
