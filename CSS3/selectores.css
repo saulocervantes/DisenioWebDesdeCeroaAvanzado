@@ -26,6 +26,6 @@ p ~ p{
 	color: green;
 }
 
-h2[title]{
+h2[title="hola"]{
 	color: red;
 }
