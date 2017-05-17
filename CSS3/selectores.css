@@ -25,3 +25,7 @@ div > p{
 p ~ p{
 	color: green;
 }
+
+h2[title]{
+	color: red;
+}
