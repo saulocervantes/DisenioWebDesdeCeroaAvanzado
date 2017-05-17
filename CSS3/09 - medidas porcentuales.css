@@ -1,0 +1,15 @@
+div{
+	background: red;
+}
+
+div.fija{
+	height: 100px;
+	width: 100px;
+}
+
+div.porcentual{
+	height: 100px;
+	width: 50%;
+	background: green;
+	margin: 5%;
+}
