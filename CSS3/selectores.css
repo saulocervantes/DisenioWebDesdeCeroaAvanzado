@@ -47,7 +47,7 @@ article p{
 }
 
 .rojo{
-	color: red;
+	color: red !important;
 }
 
 #gris{
