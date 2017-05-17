@@ -26,6 +26,6 @@ p ~ p{
 	color: green;
 }
 
-h2[title="hola"]{
+h2[title ~= "otro"]{
 	color: red;
 }
