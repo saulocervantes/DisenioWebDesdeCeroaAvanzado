@@ -33,3 +33,10 @@ h2[title ~= "otro"]{
 h2[lang |= "es"]{
 	color: blue;
 }
+article p{
+	font-size: 20px;
+}
+div{
+	font-size: 50px;
+}
+
