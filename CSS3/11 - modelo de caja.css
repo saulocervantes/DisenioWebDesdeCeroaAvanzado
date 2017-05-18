@@ -7,4 +7,5 @@ div{
 div.dimension{
 	min-width: 250px;
 	max-width: 400px;
+	margin: 20px 50px 100px 3%;
 }
