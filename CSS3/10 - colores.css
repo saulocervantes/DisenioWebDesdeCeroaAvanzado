@@ -5,6 +5,14 @@ div{
 	margin: 20px;
 }
 
+.hsla{
+	background: hsla(127,50%,30%, 0.8);
+}
+
+.rgba{
+	background: rgba(127,51,191,0.5);
+}
+
 .reservadas{
 	background: lime;
 }
