@@ -20,3 +20,7 @@ div{
 .porcentual{
 	background: rgb(50%,20%,75%);
 }
+
+.hsl{
+	background: hsl(240,100%,30%);
+}
