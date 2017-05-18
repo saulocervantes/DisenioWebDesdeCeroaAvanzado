@@ -16,3 +16,7 @@ div{
 .hex{
 	background: #643005;
 }
+
+.porcentual{
+	background: rgb(50%,20%,75%);
+}
