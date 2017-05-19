@@ -1,0 +1,7 @@
+a#link1:link{
+	color: green;
+}
+
+a#link2:visited{
+	color: red;
+}
