@@ -3,13 +3,19 @@
 	height: 250px;
 	margin: 25px;
 	background: orange;
+	position: relative;
 }
 
 .hijo1{
 	width: 50px;
 	height: 50px;
 	background: red;
-	position: relative;
-	top: 30px;
-	left: 200px;
+	position: absolute;
+	top: 10px;
+}
+
+.hijo2{
+	width: 100px;
+	height: 100px;
+	background: green;
 }
