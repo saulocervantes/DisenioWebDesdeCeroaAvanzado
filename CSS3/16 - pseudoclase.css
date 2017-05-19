@@ -5,3 +5,18 @@ a#link1:link{
 a#link2:visited{
 	color: red;
 }
+
+p:hover{
+	color: green;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+span:active{
+	color: green;
+}
+
+input:focus{
+	border-radius: 5px;
+	background: #FFD6D6;
+}
