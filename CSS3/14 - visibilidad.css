@@ -22,3 +22,7 @@
 	background: green;
 	position: absolute;
 }
+
+.oculto{
+	visibility: hidden;
+}
