@@ -15,6 +15,14 @@ div *{
 	display: inline-block;
 }
 
-div p:nth-last-of-type(odd){
+div article:only-of-type{
 	background: gray;
+}
+
+div a:last-of-type{
+	background: green;
+}
+
+div p:first-of-type{
+	background: pink;
 }
