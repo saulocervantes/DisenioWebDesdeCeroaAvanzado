@@ -26,3 +26,15 @@ div a:last-of-type{
 div p:first-of-type{
 	background: pink;
 }
+
+div aside:empty{
+	background: brown;
+}
+
+div article:not(.clase){
+	background: orange;
+}
+
+:root{
+	background: blue;
+}
