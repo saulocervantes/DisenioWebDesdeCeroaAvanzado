@@ -15,10 +15,6 @@ div *{
 	display: inline-block;
 }
 
-div *:nth-child(7){
-	background: orange;
-}
-
-div *:nth-child(even){
-	border-radius: 3px;
+div p:nth-last-of-type(odd){
+	background: gray;
 }
