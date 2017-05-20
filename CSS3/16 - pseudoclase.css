@@ -1,22 +1,24 @@
-a#link1:link{
-	color: green;
+body{
+	background: khaki;
+	font-size: 12px;
 }
 
-a#link2:visited{
-	color: red;
+div{
+	margin: 10px;
 }
 
-p:hover{
-	color: green;
-	font-size: 20px;
-	font-weight: bolder;
+div *{
+	border: 1px solid black;
+	width: 80px;
+	height: 50px;
+	background: white;
+	display: inline-block;
 }
 
-span:active{
-	color: green;
+div *:nth-child(7){
+	background: orange;
 }
 
-input:focus{
-	border-radius: 5px;
-	background: #FFD6D6;
+div *:nth-child(even){
+	border-radius: 3px;
 }
