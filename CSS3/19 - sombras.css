@@ -4,8 +4,12 @@ div{
 	background: white;
 	margin: 50px;
 	text-align: center;
-	box-shadow: 10px 0px 0px red,
-				20px 0px 0px green;
+	box-shadow: 1px 1px 0px gray,
+				2px 2px 0px gray,
+				3px 3px 0px gray,
+				4px 4px 0px gray,
+				5px 5px 0px black,
+				6px 6px 0px black;
 	border: 1px solid black;
 }
 
