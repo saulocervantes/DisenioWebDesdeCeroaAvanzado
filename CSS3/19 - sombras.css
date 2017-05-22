@@ -4,7 +4,8 @@ div{
 	background: white;
 	margin: 50px;
 	text-align: center;
-	box-shadow: 10px 10px 8px red;
+	box-shadow: 10px 0px 0px red,
+				20px 0px 0px green;
 	border: 1px solid black;
 }
 
