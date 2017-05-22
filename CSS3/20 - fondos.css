@@ -3,9 +3,9 @@ div{
 	width: 200px;
 	border: 2px solid red;
 	margin: 50px;
-}
-
-figure{
-	height: 127px;
 	background: url("imagen.jpg");
+	background-repeat: no-repeat;
+	background-repeat: repeat-y;
+
+	background-position: center;
 }
