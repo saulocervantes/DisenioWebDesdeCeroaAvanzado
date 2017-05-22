@@ -1,0 +1,17 @@
+div{
+	height: 200px;
+	width: 200px;
+	background: white;
+	margin: 50px;
+	text-align: center;
+	box-shadow: 10px 10px 8px red;
+	border: 1px solid black;
+}
+
+p{
+	position: relative;
+	top: 70px;
+	font-size: 20px;
+	text-shadow: 0px 0px 15px gray;
+	color: white;
+}
