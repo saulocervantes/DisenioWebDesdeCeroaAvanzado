@@ -5,6 +5,7 @@ div{
 	margin: 50px;
 }
 
-figure, img{
-	width: 50%;
+figure{
+	height: 127px;
+	background: url("imagen.jpg");
 }
