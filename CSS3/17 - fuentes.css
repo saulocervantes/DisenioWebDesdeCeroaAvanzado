@@ -1,0 +1,15 @@
+@font-face{
+	font-family: "irlandesa";
+	src: url(fonts/Barrio-Resgular.ttf);
+	src: local('?'),
+		url(fonts/Barrio-Regular.woff) format("woff"),
+		url(fonts/Barrio-Regular.ttf) format("truetype");
+}
+
+p{
+	font-family: "irlandesa", Arial;
+}
+
+span{
+	font-family: 'Indie Flower', cursive;
+}
