@@ -19,6 +19,17 @@ p.text{
 	font-weight: 700;
 	font-style: normal;
 	text-align: justify;
-	text-decoration: line-through;
-	text-transform: lowercase;
+	font-variant: small-caps;
+	text-indent: 14px;
+	letter-spacing: 3px;
+	word-spacing: 4px;
+}
+
+p.text:first-letter{
+	font-size: 25px;
+	color: red;
+}
+
+p.text:first-line{
+	font-size: 25px;
 }
