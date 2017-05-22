@@ -13,3 +13,12 @@ p{
 span{
 	font-family: 'Indie Flower', cursive;
 }
+
+p.text{
+	font-family: arial;
+	font-weight: 700;
+	font-style: normal;
+	text-align: justify;
+	text-decoration: line-through;
+	text-transform: lowercase;
+}
