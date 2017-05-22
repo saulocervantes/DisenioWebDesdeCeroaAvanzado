@@ -3,9 +3,10 @@ div{
 	width: 200px;
 	border: 2px solid red;
 	margin: 50px;
-	background: url("imagen.jpg");
-	background-repeat: no-repeat;
-	background-repeat: repeat-y;
+	background: url("firma.gif"),
+				url("imagen.jpg");
 
-	background-position: center;
+	background-repeat: no-repeat, repeat;
+	background-position: right bottom,
+						center center;
 }
