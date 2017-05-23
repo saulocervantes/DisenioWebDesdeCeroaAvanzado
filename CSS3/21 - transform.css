@@ -5,10 +5,11 @@ div{
 	border: 2px solid black;
 	margin: 50px;
 	transition-property: all;
-	transition-duration: 2s;
+	transition-duration: 5s;
+	transition-timing-function: ease-in-out;
 }
 
 .aux:hover{
-	transform: translate(15px, 20px);
+	transform: rotate(90deg) skew(20deg);
 	background: green;
 }
