@@ -3,10 +3,28 @@ div{
 	width: 200px;
 	border: 2px solid red;
 	margin: 50px;
+}
+
+.imagen{
 	background: url("firma.gif"),
 				url("imagen.jpg");
 
 	background-repeat: no-repeat, repeat;
 	background-position: right bottom,
 						center center;
+}
+
+.degradados{
+	background: -moz-linear-gradient(
+		left,
+		blue 0%,
+		red 30%,
+		green 80%,
+		yellow 100%
+
+		);
+	background: -webkit-linear-gradient();
+	background: -o-linear-gradient();
+	background: linear-gradient();
+
 }
