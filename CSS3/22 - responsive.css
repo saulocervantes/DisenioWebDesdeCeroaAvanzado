@@ -5,7 +5,7 @@ body{
 div{
 	width: 80%;
 	height: 150px;
-	margin: 8%;
+	margin: 10%;
 	display: inline-block;
 	background: white;
 	min-width: 200px;
@@ -20,6 +20,11 @@ div{
 @media screen and (min-width: 767px){
 	body{
 		background: #34A2A6;
+	}
+
+	div{
+		width: 40%;
+		margin: 4%;
 	}
 }
 
