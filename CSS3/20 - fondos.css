@@ -15,8 +15,8 @@ div{
 }
 
 .degradados{
-	background: -moz-linear-gradient(
-		left 25deg,
+	background: -moz-radial-gradient(
+		left,
 		blue 0%,
 		red 30%,
 		green 80%,
