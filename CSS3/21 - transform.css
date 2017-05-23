@@ -4,9 +4,11 @@ div{
 	background: orange;
 	border: 2px solid black;
 	margin: 50px;
+	transition-property: all;
+	transition-duration: 2s;
 }
 
-.aux{
+.aux:hover{
 	transform: translate(15px, 20px);
-	transform: scaleX(1.2);
+	background: green;
 }
