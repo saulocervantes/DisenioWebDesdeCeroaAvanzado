@@ -15,6 +15,12 @@ div{
 	-moz-transform: translateX(0px);
 	-ms-transform: translateX(0px);
 	-o-transform: translateX(0px);
+
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;*/
 }
 
 .triangulo_lateral:before{
@@ -26,20 +32,24 @@ div{
 	transition-duration: 0.3s;
 
 	border-style: solid;
-	border-width: 15px 15px 15px 0;
+	border-width: 0px 15px 15px 15px;
 	border-color: transparent
-					#a8cf45
 					transparent
+					red
 					transparent;
 
 	position: absolute;
-	left: 0px;
-	top: 50%;
-	margin-top: -15px;
+	left: 50%;
+	top: 0px;
+	margin-left: -15px;
 }
 
 .triangulo_lateral:hover:before{
-	/*left: -14px;*/
-	transform: translate(-14px)
+	top: -15px;
+	/*transform: translateY(-14px)*/
 	/*rotate(20deg);*/
+}
+
+.triangulo_lateral:hover{
+	transform: translateY(15px)
 }
