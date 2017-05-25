@@ -27,8 +27,8 @@ div{
 	left: 0px;
 	bottom: 0px;
 
-	width: 35px;
-	height: 35px;
+	width: 0px;
+	height: 0px;
 
 	background: -webkit-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
 	background: -moz-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
@@ -36,4 +36,15 @@ div{
 	background: -o-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
 	background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
 
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+
+}
+
+.esquina_pagina:hover:before{
+	width: 35px;
+	height: 35px;
 }
