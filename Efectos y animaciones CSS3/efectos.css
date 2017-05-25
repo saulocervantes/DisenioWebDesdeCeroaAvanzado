@@ -5,10 +5,10 @@ div{
 	margin-left: 25%;
 }
 
-div:hover{
+div:focus{
 	background: orange;
 }
 
-a:hover{
+a:focus{
 	color: red;
 }
