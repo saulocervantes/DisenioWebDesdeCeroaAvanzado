@@ -1,14 +1,31 @@
 div{
-	border: 2px solid black;
-	width: 50%;
-	position: relative;
-	margin-left: 25%;
+	font-family: 'Arial';
+	background-color: #a8cf45;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-div:active{
-	background: orange;
+.triangulo_lateral{
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
 }
 
-a:active{
-	color: red;
+.triangulo_lateral:before{
+	content: '';
+
+	width: 30px;
+	height: 30px;
+	background: red;
+
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -15px;
 }
