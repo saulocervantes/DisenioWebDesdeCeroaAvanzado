@@ -5,10 +5,10 @@ div{
 	margin-left: 25%;
 }
 
-div:focus{
+div:active{
 	background: orange;
 }
 
-a:focus{
+a:active{
 	color: red;
 }
