@@ -23,15 +23,21 @@ div{
 	width: 100%;
 	height: 5px;
 	left: 0px;
-	background: red;
+
+	opacity: 0;
+	transition-duration: 0.3s;
 }
 
-.sombra_radial:before{
+.sombra_radial:hover:before{
 	bottom: 100%;
 	background: radial-gradient(ellipse at 50% 150%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+
+	opacity: 1;
 }
 
-.sombra_radial:after{
+.sombra_radial:hover:after{
 	top: 100%;
 	background: radial-gradient(ellipse at 50% -50%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+
+	opacity: 1;
 }
