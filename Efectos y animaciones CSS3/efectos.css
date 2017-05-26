@@ -26,4 +26,11 @@ div{
 	bottom: 4px;
 	left: 4px;
 	right: 4px;
+	opacity: 0;
+
+	transition-duration: 0.3s;
+}
+
+.borde_interno:hover:before{
+	opacity: 1;
 }
