@@ -1,3 +1,7 @@
+body{
+	background: #64062e;
+}
+
 div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
@@ -10,11 +14,15 @@ div{
 	vertical-align: middle;
 }
 
-.resalte_borde{
-	box-shadow: inset 0 0 0 4px #ddd;
-	transition-duration: 0.3s;
+.borde_interno{
+	position: relative;
 }
 
-.resalte_borde:hover{
-	box-shadow: inset 0 0 0 4px #555;
+.borde_interno:before{
+	content: '';
+	position: absolute;
+	border: 4px solid white;
+	top: 4px;
+	bottom: 4px;
+	
 }
