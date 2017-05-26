@@ -14,27 +14,10 @@ div{
 	vertical-align: middle;
 }
 
-.expansion_borde{
-	position: relative;
-}
-
-.expansion_borde:before{
-	content: '';
-	position: absolute;
-	border: 4px solid white;
-	top: -16px;
-	bottom: -16px;
-	left: -16px;
-	right: -16px;
-	opacity: 0;
-
+.esquina_redondeada{
 	transition-duration: 0.3s;
 }
 
-.expansion_borde:hover:before{
-	top: -8px;
-	bottom: -8px;
-	right: -8px;
-	left: -8px;
-	opacity: 1;
+.esquina_redondeada:hover{
+	border-radius: 20px;
 }
