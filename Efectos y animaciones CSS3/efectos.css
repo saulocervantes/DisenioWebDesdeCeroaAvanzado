@@ -1,23 +1,32 @@
 body{
-	background: #64062e;
-}
-
-div{
+	background: #6d0a43;
 	font-family: 'Arial';
-	background-color: #a8cf45;
-	margin: 10px 10px;
-	text-align: center;
-	font-weight: bolder;
-	padding: 15px 30px;
-	width: 80px;
+}
+
+nav{
+	background: white;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: right;
+}
+
+nav ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+li{
 	display: inline-block;
-	vertical-align: middle;
+	margin: 7px -2px;
 }
 
-.esquina_redondeada{
-	transition-duration: 0.3s;
-}
-
-.esquina_redondeada:hover{
-	border-radius: 20px;
+a{
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+	border: solid 1px red;
+	padding: 5px 10px;
 }
