@@ -10,20 +10,16 @@ div{
 	vertical-align: middle;
 }
 
-.chicle:hover{
-	animation: 1s chicle 1;
+.vibrador:hover{
+	animation: 1s vibracion infinite;
 }
 
-@keyframes chicle{
-	30%{
-		transform: scaleX(1.25) scaleY(0.75);
+@keyframes vibracion{
+	10%, 30%, 50%, 70%, 90%{
+		transform: translateX(-10px);
 	}
 
-	50%{
-		transform: scaleX(0.75) scaleY(1.25);
-	}
-
-	60%{
-		transform: scaleX(1.15) scaleY(0.85);
+	20%, 40%, 60%, 80%{
+		transform: translateX(10px);
 	}
 }
