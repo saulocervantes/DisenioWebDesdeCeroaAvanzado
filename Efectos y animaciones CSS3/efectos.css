@@ -23,4 +23,14 @@ div{
 	40%{
 		transform: rotate(60deg);
 	}
+
+	80%{
+		opacity: 1;
+		transform: rotate(60deg);
+	}
+
+	100%{
+		transform: translateY(400px);
+		opacity: 0;
+	}
 }
