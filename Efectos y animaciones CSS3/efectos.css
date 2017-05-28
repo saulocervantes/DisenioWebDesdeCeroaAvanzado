@@ -10,16 +10,16 @@ div{
 	vertical-align: center;
 }
 
-.flash:hover{
-	animation: 0.7s flash 1;
+.click:hover{
+	animation: 0.7s click 1;
 }
 
-@keyframes flash{
-	50%{
-		opacity: 1;
+@keyframes click{
+	25%, 75%{
+		transform: scale(0.8);
 	}
 
-	25%, 75%{
-		opacity: 0;
+	50%{
+		transform: scale(1.1);
 	}
 }
