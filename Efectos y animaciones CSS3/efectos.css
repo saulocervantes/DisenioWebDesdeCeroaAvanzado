@@ -18,12 +18,10 @@ p{
 }
 
 @keyframes cambia_color{
-	0%, 70%{
+	from{
 		background: blue;
 	}
-
-	50%{
-		background: red;
-		height: 100px;
+	to{
+		background: yellow;
 	}
 }
