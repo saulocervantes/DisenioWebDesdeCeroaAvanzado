@@ -18,4 +18,12 @@ div{
 	20%{
 		transform: scale(0.7) rotate(-6deg);
 	}
+
+	30%, 70%{
+		transform: scale(1.1) rotate(6deg);
+	}
+
+	50%, 90%{
+		transform: scale(1.1) rotate(-6deg);
+	}
 }
