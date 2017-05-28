@@ -10,28 +10,12 @@ div{
 	vertical-align: middle;
 }
 
-.cartel:hover{
-	animation: 1s cartel 1;
+.balanceo:hover{
+	animation: 1s balanceo 1;
 }
 
-@keyframes cartel{
+@keyframes balanceo{
 	20%{
-		transform: rotate(15deg);
-		transform-origin: top center;
-	}
-
-	40%{
-		transform: rotate(-10deg);
-		transform-origin: top center;
-	}
-
-	60%{
-		transform: rotate(5deg);
-		transform-origin: top center;
-	}
-
-	80%{
-		transform: rotate(-3deg);
-		transform-origin: top center;
+		transform: scale(0.7) rotate(-6deg);
 	}
 }
