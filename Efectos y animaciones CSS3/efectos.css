@@ -1,25 +1,29 @@
 div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
-	margin: 15px 10px;
-	padding: 5px 40px;
+	margin: 15px 20px;
+	padding: 5px 20px;
 	text-align: center;
 	font-weight: bolder;
 	width: 80px;
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
-.click:hover{
-	animation: 0.7s click 1;
+.chicle:hover{
+	animation: 1s chicle 1;
 }
 
-@keyframes click{
-	25%, 75%{
-		transform: scale(0.8);
+@keyframes chicle{
+	30%{
+		transform: scaleX(1.25) scaleY(0.75);
 	}
 
 	50%{
-		transform: scale(1.1);
+		transform: scaleX(0.75) scaleY(1.25);
+	}
+
+	60%{
+		transform: scaleX(1.15) scaleY(0.85);
 	}
 }
