@@ -10,27 +10,24 @@ div{
 	vertical-align: middle;
 }
 
-.descolgado{
-	animation: 1s descolgado 1;
-	transform-origin: top left;
+.inRotativo{
+	animation: 1s inRotativo 1;
 }
 
-@keyframes descolgado{
-	20%, 60%{
-		transform: rotate(80deg);
-	}
+.outRotativo{
+	animation: 1s outRotativo 1;
+}
 
-	40%{
-		transform: rotate(60deg);
-	}
-
-	80%{
-		opacity: 1;
-		transform: rotate(60deg);
-	}
-
-	100%{
-		transform: translateY(400px);
+@keyframes inRotativo{
+	0%{
 		opacity: 0;
+		transform: translateX(-100%) rotate(-260deg);
+	}
+}
+
+@keyframes outRotativo{
+	100%{
+		opacity: 0;
+		transform: translateX(100%) rotate(-260deg);
 	}
 }
