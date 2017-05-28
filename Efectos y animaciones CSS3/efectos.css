@@ -10,28 +10,17 @@ div{
 	vertical-align: middle;
 }
 
-.vaiven:hover{
-	animation: 1s vaiven 1;
+.descolgado{
+	animation: 1s descolgado 1;
+	transform-origin: top left;
 }
 
-@keyframes vaiven{
-	15%{
-		transform: rotate(-10deg) translateX(-25%);
+@keyframes descolgado{
+	20%, 60%{
+		transform: rotate(80deg);
 	}
 
-	30%{
-		transform: rotate(5deg) translateX(20%);
-	}
-
-	45%{
-		transform: rotate(-3deg) translateX(-10%);
-	}
-
-	60%{
-		transform: rotate(2deg) translateX(5%);
-	}
-
-	75%{
-		transform: rotate(-1deg) translateX(-3%);
+	40%{
+		transform: rotate(60deg);
 	}
 }
