@@ -10,20 +10,28 @@ div{
 	vertical-align: middle;
 }
 
-.balanceo:hover{
-	animation: 1s balanceo 1;
+.vaiven:hover{
+	animation: 1s vaiven 1;
 }
 
-@keyframes balanceo{
-	20%{
-		transform: scale(0.7) rotate(-6deg);
+@keyframes vaiven{
+	15%{
+		transform: rotate(-10deg) translateX(-25%);
 	}
 
-	30%, 70%{
-		transform: scale(1.1) rotate(6deg);
+	30%{
+		transform: rotate(5deg) translateX(20%);
 	}
 
-	50%, 90%{
-		transform: scale(1.1) rotate(-6deg);
+	45%{
+		transform: rotate(-3deg) translateX(-10%);
+	}
+
+	60%{
+		transform: rotate(2deg) translateX(5%);
+	}
+
+	75%{
+		transform: rotate(-1deg) translateX(-3%);
 	}
 }
