@@ -22,12 +22,12 @@ p{
 @keyframes veloz{
 	0%{
 		opacity: 0;
-		transform: translateX(-200%) skewX(30deg);
+		transform: translateX(200%) skewX(30deg);
 	}
 
 	60%{
 		opacity: 1;
-		transform: translate(-20%) skewX(-30deg);
+		transform: translate(20%) skewX(-30deg);
 	}
 
 	80%{
