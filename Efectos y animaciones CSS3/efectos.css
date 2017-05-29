@@ -16,7 +16,7 @@ p{
 }
 
 .giro{
-	transform-origin: bottom left;
+	transform-origin: bottom right;
 	animation: 1s giro 1;
 }
 
