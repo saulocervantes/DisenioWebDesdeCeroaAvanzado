@@ -16,17 +16,13 @@ p{
 }
 
 .giro{
-	transform-origin: center;
+	transform-origin: bottom left;
 	animation: 1s giro 1;
 }
 
 @keyframes giro{
 	0%{
 		opacity: 0;
-		transform: rotate(200deg);
-	}
-
-	100%{
-		transform: rotate(360deg);
+		transform: rotate(-100deg);
 	}
 }
