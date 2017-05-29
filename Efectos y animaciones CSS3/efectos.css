@@ -12,22 +12,22 @@ div{
 	vertical-align: middle;
 }
 
-.reboteIn{
-	animation: 1s reboteIn 1;
+.salida{
+	animation: 1s salida 1;
 }
 
-@keyframes reboteIn{
-	0%{
-		opacity: 0;
-		transform: translateY(-2000%);
+@keyframes salida{
+	25%{
+		transform: scale(0.9);
 	}
 
 	50%{
 		opacity: 1;
-		transform: translateY(30px);
+		transform: scale(1.1);
 	}
 
-	70%{
-		transform: translateY(-10px);
+	100%{
+		transform: scale(0.3);
+		opacity: 0;
 	}
 }
