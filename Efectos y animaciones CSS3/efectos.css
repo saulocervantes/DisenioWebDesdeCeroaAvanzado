@@ -12,19 +12,22 @@ div{
 	vertical-align: middle;
 }
 
-.rebote{
-	animation: 2s rebote 1;
+.reboteIn{
+	animation: 1s reboteIn 1;
 }
 
-@keyframes rebote{
-	20%, 50%, 80%{
-		transform: translateY(0px);
-	}
-	40%{
-		transform: translateY(-45px);
+@keyframes reboteIn{
+	0%{
+		opacity: 0;
+		transform: scale(0.3);
 	}
 
-	60%{
-		transform: translateY(-25px);
+	50%{
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	70%{
+		transform: scale(0.9);
 	}
 }
