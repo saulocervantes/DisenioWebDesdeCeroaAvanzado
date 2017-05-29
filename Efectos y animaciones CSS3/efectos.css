@@ -2,7 +2,7 @@ div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
 	margin: 45px 0px;
-	position: relative;
+	position: fixed;
 	left: 40px;
 	padding: 5px 20px;
 	text-align: center;
@@ -19,15 +19,15 @@ div{
 @keyframes reboteIn{
 	0%{
 		opacity: 0;
-		transform: translateX(-2000%);
+		transform: translateX(2000%);
 	}
 
 	50%{
 		opacity: 1;
-		transform: translateX(30px);
+		transform: translateX(-30px);
 	}
 
 	70%{
-		transform: translateX(-10%);
+		transform: translateX(10%);
 	}
 }
