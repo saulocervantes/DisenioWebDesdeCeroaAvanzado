@@ -20,17 +20,12 @@ p{
 }
 
 @keyframes veloz{
-	0%{
-		opacity: 0;
-		transform: translateY(200%) skewX(30deg);
-	}
-
-	60%{
+	15%{
 		opacity: 1;
-		transform: translateY(-20%) skewX(-30deg);
 	}
 
-	80%{
-		transform: translateY(0%) skewX(15deg);
+	100%{
+		transform: translateX(-280%) skewX(-70deg);
+		opacity: 0;
 	}
 }
