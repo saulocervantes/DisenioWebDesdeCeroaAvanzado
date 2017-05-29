@@ -1,33 +1,30 @@
 div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
-	margin: 15px 20px;
+	margin: 45px 0px;
+	position: relative;
+	left: 40px;
 	padding: 5px 20px;
 	text-align: center;
 	font-weight: bolder;
 	width: 80px;
-	display: inline-block;
+	display: block;
 	vertical-align: middle;
 }
 
-.inRotativo{
-	animation: 1s inRotativo 1;
+.rebote{
+	animation: 2s rebote 1;
 }
 
-.outRotativo{
-	animation: 1s outRotativo 1;
-}
-
-@keyframes inRotativo{
-	0%{
-		opacity: 0;
-		transform: translateX(-100%) rotate(-260deg);
+@keyframes rebote{
+	20%, 50%, 80%{
+		transform: translateY(0px);
 	}
-}
+	40%{
+		transform: translateY(-45px);
+	}
 
-@keyframes outRotativo{
-	100%{
-		opacity: 0;
-		transform: translateX(100%) rotate(-260deg);
+	60%{
+		transform: translateY(-25px);
 	}
 }
