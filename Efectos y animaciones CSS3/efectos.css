@@ -1,4 +1,4 @@
-.veloz{
+.giro{
 	font-family: 'Arial';
 	background-color: #a8cf45;
 	text-align: center;
@@ -11,21 +11,22 @@
 
 p{
 	position: absolute;
-	top: 10%;
-	left: 20%;
+	top: 5%;
+	left: 35%;
 }
 
-.veloz{
-	animation: 1s veloz 1;
+.giro{
+	transform-origin: center;
+	animation: 1s giro 1;
 }
 
-@keyframes veloz{
-	15%{
-		opacity: 0.8;
+@keyframes giro{
+	0%{
+		opacity: 0;
+		transform: rotate(200deg);
 	}
 
 	100%{
-		transform: translateY(-280%) skewY(-20deg);
-		opacity: 0;
+		transform: rotate(360deg);
 	}
 }
