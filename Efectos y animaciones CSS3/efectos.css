@@ -18,17 +18,16 @@ div{
 
 @keyframes reboteIn{
 	0%{
-		position: fixed;
 		opacity: 0;
-		transform: translateY(2000%);
+		transform: translateY(-2000%);
 	}
 
 	50%{
 		opacity: 1;
-		transform: translateY(-30px);
+		transform: translateY(30px);
 	}
 
 	70%{
-		transform: translateY(10%);
+		transform: translateY(-10px);
 	}
 }
