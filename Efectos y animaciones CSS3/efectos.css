@@ -15,18 +15,25 @@ p{
 	left: 30%;
 }
 
-.giroOutX{
-	animation: 1.5s giroOutX 1;
+.giro{
+	animation: 1s giro 1;
 	backface-visibility: visible;
 }
 
-@keyframes giroOutX{
-	25%{
-		opacity: 1;
+@keyframes giro{
+	40%{
+		transform: perspective(100px) rotateY(170deg);
+	}
+
+	50%{
+		transform: perspective(100px) rotateY(190deg);
+	}
+
+	80%{
+		transform: perspective(100px) rotateY(360deg);
 	}
 
 	100%{
-		opacity: 0.3;
-		transform: perspective(100px) rotateX(90deg);
+		transform: perspective(100px) rotateY(360deg);
 	}
 }
