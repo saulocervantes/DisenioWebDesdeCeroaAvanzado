@@ -23,6 +23,6 @@ p{
 @keyframes giroOutY{
 	100%{
 		opacity: 0.3;
-		transform: perspective(100px) rotateY(90deg);
+		transform: perspective(100px) rotateY(-90deg);
 	}
 }
