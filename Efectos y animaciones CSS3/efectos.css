@@ -1,4 +1,4 @@
-.giroX{
+.giroY{
 	font-family: 'Arial';
 	background-color: #a8cf45;
 	text-align: center;
@@ -15,22 +15,22 @@ p{
 	left: 30%;
 }
 
-.giroX{
-	animation: 1.5s girox 1;
+.giroY{
+	animation: 1.5s giroY 1;
 	backface-visibility: visible;
 }
 
-@keyframes girox{
+@keyframes giroY{
 	0%{
 		opacity: 0.5;
-		transform: perspective(200px) rotateX(90deg);
+		transform: perspective(200px) rotateY(90deg);
 	}
 
 	40%{
-		transform: perspective(200px) rotateX(-20deg);
+		transform: perspective(200px) rotateY(-20deg);
 	}
 
 	70%{
-		transform: perspective(200px) rotateX(20deg);
+		transform: perspective(200px) rotateY(20deg);
 	}
 }
