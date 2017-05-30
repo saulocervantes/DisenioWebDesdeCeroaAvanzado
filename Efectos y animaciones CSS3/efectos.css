@@ -24,9 +24,9 @@ p{
 	25%{
 		opacity: 1;
 	}
-	
+
 	100%{
 		opacity: 0.3;
-		transform: perspective(100px) rotateX(-90deg);
+		transform: perspective(100px) rotateX(90deg);
 	}
 }
