@@ -1,4 +1,4 @@
-.giro{
+.sombra_movil{
 	font-family: 'Arial';
 	background-color: #a8cf45;
 	text-align: center;
@@ -11,18 +11,47 @@
 
 p{
 	position: absolute;
-	top: 5%;
-	left: 35%;
+	top: 8%;
+	left: 5%;
 }
 
-.giro{
-	transform-origin: top left;
-	animation: 1s giro 1;
+.sombra_movil{
+	transform: translateX(0);
 }
 
-@keyframes giro{
-	0%{
-		opacity: 0;
-		transform: rotate(-100deg);
+
+.sombra_movil:hover{
+	transform: translateY(-6px);
+	animation: 1.5s movercaja infinite;
+}
+
+@keyframes movercaja{
+	50%{
+		transform: translateY(-3px);
+	}
+}
+
+.sombra_movil:before{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -moz-radial-gradient(ellipse, rgba(0, 0, 0, 0.35)0%, rgba(0, 0, 0, 0)80%);
+	transition-duration: 0.3s;
+}
+
+.sombra_movil:hover:before{
+	opacity: 0.4;
+	transform: translateY(6px);
+	animation: 1.5s moversombra infinite;
+}
+
+@keyframes moversombra{
+	50%{
+		opacity: 1;
+		transform: translateY(3px);
 	}
 }
