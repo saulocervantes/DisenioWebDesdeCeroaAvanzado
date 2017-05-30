@@ -1,4 +1,4 @@
-.giroY{
+div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
 	text-align: center;
@@ -15,22 +15,14 @@ p{
 	left: 30%;
 }
 
-.giroY{
-	animation: 1.5s giroY 1;
+.giroOutY{
+	animation: 1.5s giroOutY 1;
 	backface-visibility: visible;
 }
 
-@keyframes giroY{
-	0%{
-		opacity: 0.5;
-		transform: perspective(200px) rotateY(90deg);
-	}
-
-	40%{
-		transform: perspective(200px) rotateY(-20deg);
-	}
-
-	70%{
-		transform: perspective(200px) rotateY(20deg);
+@keyframes giroOutY{
+	100%{
+		opacity: 0.3;
+		transform: perspective(100px) rotateY(90deg);
 	}
 }
