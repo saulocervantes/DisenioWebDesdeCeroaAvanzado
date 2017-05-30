@@ -16,5 +16,21 @@ p{
 }
 
 .giroX{
-	transform: perspective(50px) rotateX(50deg);
+	animation: 1.5s girox 1;
+	backface-visibility: visible;
+}
+
+@keyframes girox{
+	0%{
+		opacity: 0.5;
+		transform: perspective(200px) rotateX(90deg);
+	}
+
+	40%{
+		transform: perspective(200px) rotateX(-20deg);
+	}
+
+	70%{
+		transform: perspective(200px) rotateX(20deg);
+	}
 }
