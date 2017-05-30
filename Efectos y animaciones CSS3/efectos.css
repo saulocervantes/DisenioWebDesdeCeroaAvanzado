@@ -22,18 +22,18 @@ p{
 
 @keyframes giro{
 	40%{
-		transform: perspective(100px) rotateY(170deg);
+		transform: perspective(300px) rotateY(170deg) translateZ(120px);
 	}
 
 	50%{
-		transform: perspective(100px) rotateY(190deg);
+		transform: perspective(300px) rotateY(190deg) translateZ(120px);
 	}
 
 	80%{
-		transform: perspective(100px) rotateY(360deg);
+		transform: perspective(300px) rotateY(360deg) translateZ(0px);
 	}
 
 	100%{
-		transform: perspective(100px) rotateY(360deg);
+		transform: perspective(300px) rotateY(360deg);
 	}
 }
