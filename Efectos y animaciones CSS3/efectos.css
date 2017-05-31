@@ -1,65 +1,33 @@
 body{
-	background: rgb(29, 32, 49);
+	background: #FFF;
 }
 
-.box{
-	display: inline-block;
-	margin: 50px;
-	width: 200px;
-	height: 200px;
+.content{
+	width: 92px;
+	height: 92px;
+	margin: 100px;
+	background: url("mapa.png");
+	background-size: 316px;
+	border-radius: 50%;
+	animation: 10s rotacion infinite linear;
+	box-shadow: 0px 5px 15px #888;
 	position: relative;
-
-	transition-duration: 0.5s;
-	transform-style: preserve-3d;
-	transform-origin: left center;
 }
 
-.box > div{
-	border: 2px solid black;
-	position: absolute;
-	width: 100%;
-	height: 100%;
+@keyframes rotacion{
+	0%{
+		background-position: 0px 0px;
+	}
+
+	100%{
+		background-position: -155px 0px;
+	}
 }
 
-.front{
-	opacity: 0.75;
-	box-shadow: inset 0px 2px 20px black;
-}
-
-.back{
-	background: white;
-	transform: translateZ(-100px) rotateY(90deg);
-	left: 50%;
-}
-
-.box:hover{
-	transform:
-	perspective(1250px)
-	rotateY(-80deg);
-}
-
-.box:hover .front{
-	opacity: 1;
-}
-
-.box:nth-child(1) .front{
-	background: url("imagen.jpg");
-
-}
-
-.box:nth-child(2) .front{
-	background: url("bba.png"), #ccc;
-	background-size: 200px 200px;
-
-}
-
-.back h1{
-	margin: 5px auto;
-	width: 90%;
-	border-bottom: 3px solid #870606;
-}
-
-.back p{
-	margin: 5% auto;
-	width: 90%;
+.sombra3d{
+    background: url("sombra.png") center;
+    background-size: 102px;
+    position: absolute;
+    width: 92px;
+    height: 92px;
 }
