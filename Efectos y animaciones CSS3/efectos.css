@@ -17,7 +17,7 @@
 .cara{
 	position: absolute;
 	border: 5px solid black;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .cara:nth-child(1){
@@ -48,4 +48,22 @@
 .cara:nth-child(6){
 	background: white;
 	transform: translateY(150px) rotateX(90deg);
+}
+
+.cubo{
+	animation: 20s giro infinite linear;
+}
+
+@keyframes giro{
+	0%{
+		transform: rotateX(-45deg) rotateY(0deg);
+	}
+
+	50%{
+		transform: rotateX(45deg) rotateY(360deg);
+	}
+
+	100%{
+		transform: rotateX(-45deg) rotateY(720deg);
+	}
 }
