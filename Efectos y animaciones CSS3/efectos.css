@@ -1,5 +1,5 @@
 body{
-	background: #AAF1DC;
+	background: rgb(29, 32, 49);
 }
 
 .box{
@@ -22,11 +22,12 @@ body{
 }
 
 .front{
-	background: green;
+	opacity: 0.75;
+	box-shadow: inset 0px 2px 20px black;
 }
 
 .back{
-	background: red;
+	background: white;
 	transform: translateZ(-100px) rotateY(90deg);
 	left: 50%;
 }
@@ -35,4 +36,30 @@ body{
 	transform:
 	perspective(1250px)
 	rotateY(-80deg);
+}
+
+.box:hover .front{
+	opacity: 1;
+}
+
+.box:nth-child(1) .front{
+	background: url("imagen.jpg");
+
+}
+
+.box:nth-child(2) .front{
+	background: url("bba.png"), #ccc;
+	background-size: 200px 200px;
+
+}
+
+.back h1{
+	margin: 5px auto;
+	width: 90%;
+	border-bottom: 3px solid #870606;
+}
+
+.back p{
+	margin: 5% auto;
+	width: 90%;
 }
