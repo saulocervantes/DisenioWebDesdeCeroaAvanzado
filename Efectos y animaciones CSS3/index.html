@@ -47,10 +47,62 @@
 				cadena = cadena + "</div>"
 			}
 
-			document.getElementById("minutes1").innerHTML = cadena;
+			document.getElementById(rueda).innerHTML = cadena;
 		}
 
-			llenarRueda("minutes1",3,5);
+		var time = new Date();//Variable que da la fecha
+
+		//---HORAS---
+
+		var horas1 = time.getHours();
+
+		while( (horas1 % 10) != 0){
+			horas1--;
+		}
+		
+		horas1 = horas1/10;
+
+		llenarRueda("hours1", horas1, 2);
+
+		//
+		var horas2 = time.getHours();
+		horas2 = horas2 - horas1 * 10;
+
+		llenarRueda("hours2", horas2, 10);
+
+		//---MINUTOS---
+		var minutes1 = time.getMinutes();
+
+		while( (minutes1 % 10) != 0){
+			minutes1--;
+		}
+		
+		minutes1 = minutes1/10;
+
+		llenarRueda("minutes1", minutes1, 5);
+
+		//
+		var minutes2 = time.getMinutes();
+		minutes2 = minutes2 - minutes1 * 10;
+
+		llenarRueda("minutes2", minutes2, 9);
+
+		//---SEGUNDOS---
+		var seconds1 = time.getSeconds();
+
+		while( (seconds1 % 10) != 0){
+			seconds1--;
+		}
+		
+		seconds1 = seconds1/10;
+
+		llenarRueda("seconds1", seconds1, 5);
+
+		//
+		var seconds2 = time.getSeconds();
+		seconds2 = seconds2 - seconds1 * 10;
+
+		llenarRueda("seconds2", seconds2, 9);
 
 	</script>
 </body>
