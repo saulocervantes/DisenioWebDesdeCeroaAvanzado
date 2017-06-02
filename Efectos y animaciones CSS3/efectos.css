@@ -15,6 +15,33 @@ body{
 	margin: 250px 50px;
 	height: 150px;
 	width: 150px;
+	position: absolute;
+	transform-style: preserve-3d;
+	top: 0px;
+}
+
+#hours1{
+	left: 0px;
+}
+
+#hours2{
+	left: 160px;
+}
+
+#minutes1{
+	left: 440px;
+}
+
+#minutes2{
+	left: 600px;
+}
+
+#seconds1{
+	left: 880px;
+}
+
+#seconds2{
+	left: 1040px;
 }
 
 .card{
