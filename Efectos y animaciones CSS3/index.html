@@ -10,83 +10,48 @@
 <body>
 	<div id="content">
 
-		<div id="hours1" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3"></div>
-			<div class="card c4"></div>
-			<div class="card c5"></div>
-			<div class="card c6"></div>
-			<div class="card c7"></div>
-			<div class="card c8"></div>
-			<div class="card c9"></div>
-		</div>
+		<div id="hours1" class="rueda"></div>
 
-		<div id="hours2" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3">3</div>
-			<div class="card c4">4</div>
-			<div class="card c5">5</div>
-			<div class="card c6">6</div>
-			<div class="card c7">7</div>
-			<div class="card c8">8</div>
-			<div class="card c9">9</div>
-		</div>
+		<div id="hours2" class="rueda"></div>
 
-		<div id="minutes1" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3">3</div>
-			<div class="card c4">4</div>
-			<div class="card c5">5</div>
-			<div class="card c6"></div>
-			<div class="card c7"></div>
-			<div class="card c8"></div>
-			<div class="card c9"></div>
-		</div>
+		<div id="minutes1" class="rueda"></div>
 
-		<div id="minutes2" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3">3</div>
-			<div class="card c4">4</div>
-			<div class="card c5">5</div>
-			<div class="card c6">6</div>
-			<div class="card c7">7</div>
-			<div class="card c8">8</div>
-			<div class="card c9">9</div>
-		</div>
+		<div id="minutes2" class="rueda"></div>
 
-		<div id="seconds1" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3">3</div>
-			<div class="card c4">4</div>
-			<div class="card c5">5</div>
-			<div class="card c6"></div>
-			<div class="card c7"></div>
-			<div class="card c8"></div>
-			<div class="card c9"></div>
-		</div>
+		<div id="seconds1" class="rueda"></div>
 		
-		<div id="seconds2" class="rueda">
-			<div class="card c0">0</div>
-			<div class="card c1">1</div>
-			<div class="card c2">2</div>
-			<div class="card c3">3</div>
-			<div class="card c4">4</div>
-			<div class="card c5">5</div>
-			<div class="card c6">6</div>
-			<div class="card c7">7</div>
-			<div class="card c8">8</div>
-			<div class="card c9">9</div>
-		</div>
+		<div id="seconds2" class="rueda"></div>
 	</div>
+
+	<script>
+		function llenarRueda(rueda, inicio, limite){
+			var ruedaReloj = document.getElementById(rueda);
+
+			cadena = "";
+
+			for(i = inicio; i < 10; i++)
+			{
+				cadena = cadena + "<div class='card c" + i +"'>"
+				if (i<=limite) {
+					cadena = cadena + i;
+				}
+				cadena = cadena + "</div>"
+			}
+
+			for(i = 0; i < inicio; i++)
+			{
+				cadena = cadena + "<div class='card c" + i +"'>"
+				if (i<=limite) {
+					cadena = cadena + i;
+				}
+				cadena = cadena + "</div>"
+			}
+
+			document.getElementById("minutes1").innerHTML = cadena;
+		}
+
+			llenarRueda("minutes1",3,5);
+
+	</script>
 </body>
 </html>
