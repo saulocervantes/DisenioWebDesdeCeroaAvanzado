@@ -1,69 +1,58 @@
-.contenedor{
-	perspective: 1000px;
-	perspective-origin: center;
-}
-
-.cubo{
+#piramide{
+	position: relative;
+	margin: 80px auto;
+	height: 500px;
+	width: 100px;
 	transform-style: preserve-3d;
-	transform: rotateY(-30deg);
-	margin: 200px auto;
+	transform-origin: 116px 200px 116px;
+	transform: rotateY(30deg);
+
+	animation: 30s giro infinite linear;
 }
 
-.cubo, .cubo > div{
-	height: 290px;
-	width: 290px;
-}
-
-.cara{
+#piramide > div{
 	position: absolute;
-	border: 5px solid black;
-	opacity: 0.8;
+	border-style: solid;
+	border-width: 200px 0px 200px 346px;
+	transform-origin: 0 0;
 }
 
-.cara:nth-child(1){
-	background: red;
-	transform: translateZ(150px);
+#piramide > div:nth-child(1){
+	border-color: transparent transparent transparent rgba(0,0,0,0.8);
+	transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
 }
 
-.cara:nth-child(2){
-	background: green;
-	transform: translateZ(-150px);
+#piramide > div:nth-child(2){
+	border-color: transparent transparent transparent rgba(255, 0, 0, 0.8);
+	transform:
+		rotateY(-19.5deg)
+		rotateX(180deg)
+		translateY(-400px);
 }
 
-.cara:nth-child(3){
-	background: blue;
-	transform: translateX(-150px) rotateY(90deg);
+#piramide > div:nth-child(3){
+	border-color: transparent transparent transparent rgba(0, 255, 0, 0.8);
+	transform: 
+	rotateY(90deg)
+			   rotateZ(60deg)
+			   rotateX(180deg)
+			   translateY(-400px);
+
+	/*z-index: -100;*/
 }
 
-.cara:nth-child(4){
-	background: orange;
-	transform: translateX(150px) rotateY(90deg);
-}
-
-.cara:nth-child(5){
-	background: yellow;
-	transform: translateY(-150px) rotateX(90deg);
-}
-
-.cara:nth-child(6){
-	background: white;
-	transform: translateY(150px) rotateX(90deg);
-}
-
-.cubo{
-	animation: 20s giro infinite linear;
+#piramide > div:nth-child(4){
+	border-color: transparent transparent transparent rgba(0, 0, 255, 0.8);
+	transform: 
+				rotateX(60deg)
+				rotateY(19.5deg)
 }
 
 @keyframes giro{
-	0%{
-		transform: rotateX(-45deg) rotateY(0deg);
+	from{
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 	}
-
-	50%{
-		transform: rotateX(45deg) rotateY(360deg);
-	}
-
-	100%{
-		transform: rotateX(-45deg) rotateY(720deg);
+	to{
+		transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
 	}
 }
